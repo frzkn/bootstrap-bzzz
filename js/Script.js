@@ -45,9 +45,16 @@ function keydowner(event) {
 
 function submitter(event) {
     if (answer === ' ')
-        alert("You're not getting in my Database so easily");
+        swal({
+        	text: "You're not getting in my Database so easily",
+        	dangerMode: true,
+        	});
     else
-        alert(answer);
+    	swal({
+    		dangerMode: true,
+    		text: answer,
+    	});
+        
 }
 
 function resetPage() {
